@@ -28,7 +28,7 @@ Two–three mentors required in addition to leads. These should be able to cover
 
 ## Prep-work for apprentices
 
-[See here](preparatory_instructions_apprentices.md)
+[See here](#18)
 
 ## Follow-on tasks
 

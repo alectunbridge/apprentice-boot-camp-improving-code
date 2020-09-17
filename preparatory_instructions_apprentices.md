@@ -1,2 +1,0 @@
-# Preparatory Instructions for Apprentices
-
