@@ -28,7 +28,7 @@ Two–three mentors required in addition to leads. These should be able to cover
 
 ## Prep-work for apprentices
 
-[See here](https://mcr-digital.github.io/apprentice-boot-camp-improving-code/#18)
+[See here](https://mcr-digital.github.io/apprentice-boot-camp-improving-code/#preparatory-instructions-for-apprentices)
 
 ## Follow-on tasks
 
