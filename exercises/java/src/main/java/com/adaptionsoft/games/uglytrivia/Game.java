@@ -122,11 +122,11 @@ public class Game {
 						+ purses[currentPlayer]
 						+ " Gold Coins.");
 				
-				boolean winner = didPlayerWin();
+				boolean isGameContinuing = isGameContinuing();
 				currentPlayer++;
 				if (currentPlayer == players.size()) currentPlayer = 0;
 				
-				return winner;
+				return isGameContinuing;
 			} else {
 				currentPlayer++;
 				if (currentPlayer == players.size()) currentPlayer = 0;
@@ -144,11 +144,11 @@ public class Game {
 					+ purses[currentPlayer]
 					+ " Gold Coins.");
 			
-			boolean winner = didPlayerWin();
+			boolean gameContinues = isGameContinuing();
 			currentPlayer++;
 			if (currentPlayer == players.size()) currentPlayer = 0;
 			
-			return winner;
+			return gameContinues;
 		}
 	}
 	
@@ -163,7 +163,7 @@ public class Game {
 	}
 
 
-	private boolean didPlayerWin() {
+	private boolean isGameContinuing() {
 		return !(purses[currentPlayer] == 6);
 	}
 }
