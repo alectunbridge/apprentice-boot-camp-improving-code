@@ -74,39 +74,30 @@ public class Game {
 	}
 
 	private void moveCurrentPlayer(int roll) {
-		places[currentPlayer] = places[currentPlayer] + roll;
-		if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
+		places[currentPlayer] = getCurrentPlayerPosition() + roll;
+		if (getCurrentPlayerPosition() > 11) places[currentPlayer] = getCurrentPlayerPosition() - 12;
 
 		System.out.println(players.get(currentPlayer)
 				+ "'s new location is "
-				+ places[currentPlayer]);
-		System.out.println("The category is " + currentCategory());
+				+ getCurrentPlayerPosition());
+		System.out.println("The category is " + Board.getBoardPositionCategory(getCurrentPlayerPosition()));
 		askQuestion();
 	}
 
 	private void askQuestion() {
-		if (currentCategory() == "Pop")
+		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Pop")
 			System.out.println(popQuestions.removeFirst());
-		if (currentCategory() == "Science")
+		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Science")
 			System.out.println(scienceQuestions.removeFirst());
-		if (currentCategory() == "Sports")
+		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Sports")
 			System.out.println(sportsQuestions.removeFirst());
-		if (currentCategory() == "Rock")
+		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Rock")
 			System.out.println(rockQuestions.removeFirst());
 	}
 
 
-	private String currentCategory() {
-		if (places[currentPlayer] == 0) return "Pop";
-		if (places[currentPlayer] == 4) return "Pop";
-		if (places[currentPlayer] == 8) return "Pop";
-		if (places[currentPlayer] == 1) return "Science";
-		if (places[currentPlayer] == 5) return "Science";
-		if (places[currentPlayer] == 9) return "Science";
-		if (places[currentPlayer] == 2) return "Sports";
-		if (places[currentPlayer] == 6) return "Sports";
-		if (places[currentPlayer] == 10) return "Sports";
-		return "Rock";
+	private int getCurrentPlayerPosition() {
+		return places[currentPlayer];
 	}
 
 	public boolean currentPlayerGetsAnswerCorrect() {
