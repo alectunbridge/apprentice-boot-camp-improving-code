@@ -103,7 +103,7 @@ public class Game {
 		return places[currentPlayer];
 	}
 
-	public boolean currentPlayerGetsAnswerCorrect() {
+	public boolean currentPlayerGetsAnswerRight() {
 		if (inPenaltyBox[currentPlayer]){
 			if (isGettingOutOfPenaltyBox) {
 				System.out.println("Answer was correct!!!!");

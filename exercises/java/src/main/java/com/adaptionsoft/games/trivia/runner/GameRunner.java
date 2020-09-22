@@ -25,7 +25,7 @@ public class GameRunner {
 			if (rand.nextInt(9) == 7) {
 				gameContinues = aGame.currentPlayerGetsAnswerWrong();
 			} else {
-				gameContinues = aGame.currentPlayerGetsAnswerCorrect();
+				gameContinues = aGame.currentPlayerGetsAnswerRight();
 			}
 
 			
