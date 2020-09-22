@@ -1,7 +1,7 @@
 package com.adaptionsoft.games.uglytrivia;
 
 public class Board {
-    static String getBoardPositionCategory(int currentPlayerPosition) {
+    public String getCategoryFromPosition(int currentPlayerPosition) {
         if (currentPlayerPosition == 0) return "Pop";
         if (currentPlayerPosition == 4) return "Pop";
         if (currentPlayerPosition == 8) return "Pop";

@@ -5,7 +5,10 @@ import java.util.LinkedList;
 
 public class Game {
     ArrayList players = new ArrayList();
+    
+    Board board = new Board();
     int[] places = new int[6];
+    
     int[] purses  = new int[6];
     boolean[] inPenaltyBox  = new boolean[6];
 
@@ -80,18 +83,18 @@ public class Game {
 		System.out.println(players.get(currentPlayer)
 				+ "'s new location is "
 				+ getCurrentPlayerPosition());
-		System.out.println("The category is " + Board.getBoardPositionCategory(getCurrentPlayerPosition()));
+		System.out.println("The category is " + board.getCategoryFromPosition(getCurrentPlayerPosition()));
 		askQuestion();
 	}
 
 	private void askQuestion() {
-		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Pop")
+		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Pop")
 			System.out.println(popQuestions.removeFirst());
-		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Science")
+		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Science")
 			System.out.println(scienceQuestions.removeFirst());
-		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Sports")
+		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Sports")
 			System.out.println(sportsQuestions.removeFirst());
-		if (Board.getBoardPositionCategory(getCurrentPlayerPosition()) == "Rock")
+		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Rock")
 			System.out.println(rockQuestions.removeFirst());
 	}
 
