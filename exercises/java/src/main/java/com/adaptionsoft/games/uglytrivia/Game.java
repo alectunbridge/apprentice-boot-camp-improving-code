@@ -83,23 +83,11 @@ public class Game {
 		System.out.println(players.get(currentPlayer)
 				+ "'s new location is "
 				+ getCurrentPlayerPosition());
-		System.out.println("The category is " + board.getCategoryFromPosition(getCurrentPlayerPosition()));
 		askQuestion();
 	}
 
-	private void askQuestion() {
-		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Pop")
-			System.out.println(popQuestions.removeFirst());
-		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Science")
-			System.out.println(scienceQuestions.removeFirst());
-		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Sports")
-			System.out.println(sportsQuestions.removeFirst());
-		if (board.getCategoryFromPosition(getCurrentPlayerPosition()) == "Rock")
-			System.out.println(rockQuestions.removeFirst());
-	}
 
-
-	private int getCurrentPlayerPosition() {
+	public int getCurrentPlayerPosition() {
 		return places[currentPlayer];
 	}
 
@@ -150,5 +138,18 @@ public class Game {
 
 	private boolean isGameContinuing() {
 		return !(purses[currentPlayer] == 6);
+	}
+
+	public void askQuestion() {
+		String category = board.getCategoryFromPosition(getCurrentPlayerPosition());
+		System.out.println("The category is " + category);
+		if (category.equals("Pop"))
+			System.out.println(popQuestions.removeFirst());
+		if (category.equals("Science"))
+			System.out.println(scienceQuestions.removeFirst());
+		if (category.equals("Sports"))
+			System.out.println(sportsQuestions.removeFirst());
+		if (category.equals("Rock"))
+			System.out.println(rockQuestions.removeFirst());
 	}
 }
