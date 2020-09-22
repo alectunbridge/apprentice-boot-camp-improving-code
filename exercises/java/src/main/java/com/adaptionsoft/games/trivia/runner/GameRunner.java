@@ -23,9 +23,9 @@ public class GameRunner {
 			aGame.rollDice(rand.nextInt(5) + 1);
 			
 			if (rand.nextInt(9) == 7) {
-				gameContinues = aGame.wrongAnswer();
+				gameContinues = aGame.currentPlayerGetsAnswerWrong();
 			} else {
-				gameContinues = aGame.wasCorrectlyAnswered();
+				gameContinues = aGame.currentPlayerGetsAnswerCorrect();
 			}
 
 			
