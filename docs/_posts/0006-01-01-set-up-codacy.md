@@ -6,8 +6,10 @@
 * Activate Codacy for your fork
 * Wait for it to analyse your code
 * Filter to your language and read through the results
+* ⚠️ Don’t change the code at this stage to fix issues! ⚠️
 
-Notes: Super easy, but hosted systems are more complex.  
+Notes: Changing the code will impact the code review exercise.  
+    Super easy, but hosted systems are more complex.  
     Was it useful?  
     Did you find anything that you’d missed in the code smell exercise, or reviewing manually?  
 

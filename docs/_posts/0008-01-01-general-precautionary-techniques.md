@@ -98,16 +98,6 @@ Notes: Climbers use pitons to make sure they don’t fall too far
 
 --
 
-## Separate style changes from substance
-
-+ Reformat in separate commit
-+ Be cautious—reformatting obscures blame
-+ IDEs may automatically reformat
-    + Review your changes
-+ Change the minimum—leave whitespace changes out
-
---
-
 ## Use feature flags to derisk changes
 
 + Flag can defer risk until rewrite complete
