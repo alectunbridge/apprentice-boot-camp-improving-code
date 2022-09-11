@@ -112,6 +112,7 @@ Note: Ask people why code review is important
 + Linting
     + ‘Tabs -> spaces’
     + ‘Indentation is wrong’
+    + Address this by automating your standards
 + Bikeshedding
     + Discussing name of a field in a class named `AbstractSingletonProxyFactoryBean`
 + Inconsistent standards/subjective comments 
@@ -127,6 +128,36 @@ Notes: Leave egos at the door
 > … the time spent on any item of the agenda will be in inverse proportion to the sum involved.
 
 —Parkinson's Law: The Pursuit of Progress
+
+--
+
+## [EditorConfig](https://editorconfig.org/)
+
++ Defined in a ‘`.editorconfig`’ file
++ Easily readable file format for defining generic coding styles
++ Supported by multiple IDEs
+  + Natively by GitHub, IntelliJ IDEA, Visual Studio
+  + By installing a plugin with VS Code
++ One way to share some standards within team
+  + Multiple standards waste time and energy
+
+--
+
+## Sample
+
++ Here’s a sample ‘`.editorconfig`’ file
+```editorconfig
+[*]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+```
++ Can override rules using file wildcards
+```editorconfig
+[lib/**.js]
+indent_style = space
+indent_size = 2
+```
 
 --
 

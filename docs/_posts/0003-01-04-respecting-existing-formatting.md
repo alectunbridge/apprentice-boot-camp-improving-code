@@ -12,10 +12,19 @@
 ## Separate style changes from substance
 
 + Reformat in separate commit
+  + Might be good before restarting work on a dormant codebase
 + Be cautious—reformatting obscures blame
 + IDEs may automatically reformat
     + Review your changes
 + Change the minimum—leave whitespace changes out
+
+--
+
+## Sometimes okay to fix everything
+
++ Linting tools can sometimes resolve issues for you
++ Not a good idea on an existing codebase
++ Good to implement early on with greenfield projects
 
 --
 
