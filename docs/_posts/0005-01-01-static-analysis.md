@@ -2,6 +2,16 @@
 
 --
 
+## KSBs we aim to cover
+
++ Implementing static analysis
+  + **[S1](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S1)**: create
+    logical and maintainable code
+  + **[S14](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S14)**: follow
+    company, team or client approaches to continuous integration, version and source control
+
+--
+
 ## Automated processes to analyse code
 
 (versus Code Review which is a human process)

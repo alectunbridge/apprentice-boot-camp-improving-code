@@ -1,6 +1,20 @@
 ## Code Review
 
-+ What is it?
+--
+
+## KSBs we aim to cover
+
++ Code review
+    + **[S14](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S14)**:
+      follow company, team or client approaches to continuous integration, version and source control
+    + **[B4](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#B4)**: Works
+      collaboratively with a wide range of people in different roles, internally and externally, with a positive
+      attitude to inclusion & diversity
+
+--
+
+# What is Code Review?
+
 + Another form of feedback
 + *Compliments* automated review
 + Yet another heuristic

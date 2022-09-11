@@ -4,6 +4,19 @@
 
 --
 
+## KSBs we aim to cover
+
++ Understanding and applying code smells
+  + **[S1](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S1)**: create
+    logical and maintainable code
+  + **[S11](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S11)**: apply
+    an appropriate software development approach according to the relevant paradigm (for example object oriented, event
+    driven or procedural)
+  + **[S12](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S12)**: follow
+    software designs and functional or technical specifications
+
+--
+
 > If it stinks, change it.
 > — Grandma Beck, discussing child-rearing philosophy
 
