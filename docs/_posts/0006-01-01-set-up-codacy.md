@@ -19,7 +19,7 @@ Notes: Changing the code will impact the code review exercise.
 
 Other things you can explore in Codacy
 
-* Create an comment to represent one of the issues
+* Create a GH comment to represent one of the issues
 * Create an issue to represent one of the issues (you’ll need to enable issues on the repo)
 * Add the badge to the repo README from Codacy settings
 * Ignore one of the issues
