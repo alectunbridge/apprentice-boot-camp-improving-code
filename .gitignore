@@ -13,6 +13,10 @@ exercises/java/out
 exercises/java/.gradle
 exercises/java/build/
 
+exercises/kotlin/out
+exercises/kotlin/.gradle
+exercises/kotlin/build/
+
 *.pyc
 
 .gradle
