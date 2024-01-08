@@ -1,4 +1,7 @@
 <?php
+
+namespace trivia;
+
 function echoln($string) {
   echo $string."\n";
 }
