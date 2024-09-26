@@ -135,14 +135,3 @@ We need to take ownership of legacy code and help ensure we don't leave behind a
 Refactoring codebase called ‘Trivia’
 
 Notes: Used in ‘Legacy Code Retreat’ workshops  
-
---
-
-## KSBs we aim to cover
-
-+ Reading and interpreting existing code
-  + **[S8](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S8)**: create
-    simple software designs to effectively communicate understanding of the program
-  + **[S15](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#S15)**
-    / **[B7](https://www.instituteforapprenticeships.org/apprenticeship-standards/software-developer-v1-1#B7)**:
-    communicate … to technical and non-technical stakeholders
